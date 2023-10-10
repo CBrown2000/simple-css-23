@@ -1,0 +1,83 @@
+body {
+    background-color: bisque;
+    margin: 0;
+    display: flex;
+    /* uses flex to maintain position */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#master {
+    /* Main section container that fixes dimensions */
+    width: 700px;
+    height: 600px;
+    background-color: rgb(247, 219, 168);
+    /* adds shadow */
+    filter: drop-shadow(5px 5px 10px grey);
+}
+
+#days-container {
+    /* makes days align in a row */
+    display: flex;
+
+}
+
+.day {
+    /* makes the days fit precisely */
+    width: 100px;
+    height: 100px;
+}
+
+.button:hover {
+    /* makes the colours change when hovering and selecting the days */
+    background-color: rgb(255, 226, 164);
+}
+
+.button:active {
+    background-color: rgb(255, 235, 179);
+}
+
+h4 {
+    /* specifies font, colour, size, uppercase */
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(128, 156, 76);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+#city-text {
+    /* matches line height to font */
+    font-size: 40px;
+    line-height: 40px;
+    position: absolute;
+    left: 10px;
+    bottom: 8px;
+    margin: 0px;
+    color: rgba(128, 156, 76, 0.904);
+}
+
+#hero-container {
+    /* hero image container */
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+.weather-icon {
+    /* how the icons look */
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#hero-image {
+    /* image id for width specification */
+    width: 700px;
+    height: 500px;
+}
